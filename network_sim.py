@@ -111,6 +111,7 @@ def draw_topology():
     pos = nx.spring_layout(G, seed=42)
     nx.draw(G, pos, with_labels=True, node_color=color_map, node_size=node_sizes, font_size=8, font_weight="bold", edge_color="gray")
     plt.title("Secure College Campus Network Architecture", fontsize=14, fontweight="bold")
+    plt.savefig("network_diagram.png", dpi=150, bbox_inches='tight')
     print("\n[+] Generating Network Topology Graph... Close the window to continue simulation.")
     plt.show()
 
